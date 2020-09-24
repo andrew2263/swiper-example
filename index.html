@@ -25,6 +25,13 @@
             color: #666777;
         }
 
+        h2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 32px;
+            line-height: 42px;
+            color: #324111;
+        }
+
         .swiper-pagination {
             position: relative;
             margin-top: -50px;
@@ -59,6 +66,46 @@
             font-size: 14px;
             line-height: 20px;
             padding: 30px;
+        }
+
+        .number-block {
+            text-align: center;
+        }
+
+        .number {
+            font-family: 'Verdana', sans-serif;
+            font-size: 20px;
+            line-height: 32px;
+            color: #894631;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .calc-button {
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            border: none;
+            background-color: #cdcdcd;
+            color: #967311;
+            font-size: 20px;
+            font-family: 'Arial Black', sans-serif;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .clear-button {
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            border: none;
+            background-color: #cdcdcd;
+            color: #443377;
+            font-size: 20px;
+            font-family: 'Arial Black', sans-serif;
+            cursor: pointer;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -95,32 +142,43 @@
             <div class="swiper-pagination"></div>
         </div>
         <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eligendi earum quibusdam at molestiae
-                nihil magnam ex ipsam, quasi libero quaerat est hic unde deleniti cum aspernatur ut odio ducimus molestias
-                laudantium vel. Accusamus quam fugiat rem fuga laudantium modi a assumenda alias amet tempora dolorum cum
-                molestiae debitis consequuntur odio, aspernatur ex in. Numquam voluptatem tempore quis illum. Voluptatum,
-                veritatis? Praesentium magni tempore nam assumenda nihil, porro quam amet fuga cumque! Possimus nesciunt laudantium
-                magni sunt quo culpa eligendi nemo. Voluptate explicabo eligendi molestias repudiandae assumenda quaerat numquam. Recusandae
-                sunt quo temporibus fugit doloremque illo laudantium asperiores iusto commodi!
-            </p>
-            <p class="text text_bottom">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maxime voluptas mollitia, expedita quis
-                officiis nam rerum, ad pariatur ipsum illum sit earum. Iusto magni asperiores, perspiciatis eum ex soluta, recusandae
-                reiciendis harum tenetur atque dolorum veniam perferendis beatae eveniet distinctio itaque repellat illum quas aliquam
-                voluptates ad. Recusandae consequatur laudantium quam, et aperiam deserunt dicta dolorem laboriosam commodi inventore harum
-                ab rem, dolorum sint amet exercitationem modi atque ipsam illo, molestiae repudiandae! Possimus optio illum necessitatibus,
-                quae veritatis natus eius facere et perferendis aut cum, iure nihil inventore harum nemo dolore dolorem autem neque! Temporibus
-                voluptate numquam iure facilis mollitia voluptatem optio rem officia eaque odit assumenda culpa, odio sit veniam enim velit, quod
-                explicabo ipsa alias necessitatibus perferendis blanditiis? Sapiente optio inventore magni voluptas possimus ipsum voluptates
-                dolorem expedita. Unde aliquid blanditiis eaque saepe quaerat voluptate eligendi nostrum provident vel! Architecto, obcaecati
-                veniam, qui eum modi fugit voluptatem quia, excepturi magni voluptates a ipsa. Aliquid sint fugit, dicta similique velit, quasi
-                assumenda provident amet, explicabo nam quod quia. Tempore exercitationem necessitatibus accusamus culpa sed natus. Voluptatem
-                accusamus magni eaque labore reprehenderit qui dignissimos odio assumenda quia ex vero, deleniti recusandae quaerat nam ut dolorem,
-                molestias earum at numquam.
-            </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eligendi earum quibusdam at molestiae
+            nihil magnam ex ipsam, quasi libero quaerat est hic unde deleniti cum aspernatur ut odio ducimus molestias
+            laudantium vel. Accusamus quam fugiat rem fuga laudantium modi a assumenda alias amet tempora dolorum cum
+            molestiae debitis consequuntur odio, aspernatur ex in. Numquam voluptatem tempore quis illum. Voluptatum,
+            veritatis? Praesentium magni tempore nam assumenda nihil, porro quam amet fuga cumque! Possimus nesciunt laudantium
+            magni sunt quo culpa eligendi nemo. Voluptate explicabo eligendi molestias repudiandae assumenda quaerat numquam. Recusandae
+            sunt quo temporibus fugit doloremque illo laudantium asperiores iusto commodi!
+        </p>
+        <p class="text text_bottom">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maxime voluptas mollitia, expedita quis
+            officiis nam rerum, ad pariatur ipsum illum sit earum. Iusto magni asperiores, perspiciatis eum ex soluta, recusandae
+            reiciendis harum tenetur atque dolorum veniam perferendis beatae eveniet distinctio itaque repellat illum quas aliquam
+            voluptates ad. Recusandae consequatur laudantium quam, et aperiam deserunt dicta dolorem laboriosam commodi inventore harum
+            ab rem, dolorum sint amet exercitationem modi atque ipsam illo, molestiae repudiandae! Possimus optio illum necessitatibus,
+            quae veritatis natus eius facere et perferendis aut cum, iure nihil inventore harum nemo dolore dolorem autem neque! Temporibus
+            voluptate numquam iure facilis mollitia voluptatem optio rem officia eaque odit assumenda culpa, odio sit veniam enim velit, quod
+            explicabo ipsa alias necessitatibus perferendis blanditiis? Sapiente optio inventore magni voluptas possimus ipsum voluptates
+            dolorem expedita. Unde aliquid blanditiis eaque saepe quaerat voluptate eligendi nostrum provident vel! Architecto, obcaecati
+            veniam, qui eum modi fugit voluptatem quia, excepturi magni voluptates a ipsa. Aliquid sint fugit, dicta similique velit, quasi
+            assumenda provident amet, explicabo nam quod quia. Tempore exercitationem necessitatibus accusamus culpa sed natus. Voluptatem
+            accusamus magni eaque labore reprehenderit qui dignissimos odio assumenda quia ex vero, deleniti recusandae quaerat nam ut dolorem,
+            molestias earum at numquam.
+        </p>
+        <div class="number-block">
+            <h2>Замыкание</h2>
+            <p class="number">Число</p>
+            <div class="button-wrapper">
+                <button type="button" class="calc-button">Кнопка</button>
+            </div>
+            <div class="button-wrapper">
+                <button type="button" class="clear-button">Очистить</button>
+            </div>
+        </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'horizontal',
