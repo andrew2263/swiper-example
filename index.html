@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .container {
+            position: relative;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .slide img {
+            height: 294px;
+            width: 260px;
+        }
+
+        .container {
+            margin: 0 auto;
+           /* display: inline-block;*/
+           text-align: center;
+        }
+
+        .swiper-pagination {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .slider {
+            list-style-type: none;
+        }
+
+        .slide {
+            background-color: #f6f7ff;
+        }
+
+        @media (max-width: 1198px) {
+            .container {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Slides</h1>
+        <div class="swiper-container">
+            <ul class="slider swiper-wrapper">
+                <li class="slide swiper-slide">
+                    <img src="img/alexander-pashkov@260.jpg" alt="img1">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/alexei-lavrov@260.jpg" alt="img2">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/anna-pavlova@260.jpg" alt="img3">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/maria-ketova@260.jpg" alt="img4">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/alexander-pashkov@260.jpg" alt="img1">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/alexei-lavrov@260.jpg" alt="img2">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/anna-pavlova@260.jpg" alt="img3">
+                </li>
+                <li class="slide swiper-slide">
+                    <img src="img/maria-ketova@260.jpg" alt="img4">
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <!--div class="swiper-scrollbar"></div-->
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        //import swiper from 'node__modules/swiper/bundle';
+        // import Swiper styles
+        //import 'swiper/swiper-bundle.css';
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+                dynaminMainBullets: 3,
+            },
+/*
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
+        });
+    </script>
+</body>
+</html>
