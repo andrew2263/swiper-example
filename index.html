@@ -11,6 +11,7 @@
             position: relative;
             width: 960px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .slide img {
@@ -18,15 +19,15 @@
             width: 260px;
         }
 
-        .container {
-            margin: 0 auto;
-           /* display: inline-block;*/
-           text-align: center;
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 40px;
+            color: #666777;
         }
 
         .swiper-pagination {
             position: relative;
-            margin-top: 15px;
+            margin-top: -50px;
         }
 
         .slider {
@@ -34,6 +35,7 @@
         }
 
         .slide {
+            padding: 100px 0;
             background-color: #f6f7ff;
         }
 
@@ -41,6 +43,22 @@
             .container {
                 width: 400px;
             }
+        }
+
+        .text {
+            padding: 50px;
+            color: #789101;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+        .text_bottom {
+            color: #846577;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 30px;
         }
     </style>
 </head>
@@ -75,15 +93,35 @@
                 </li>
             </ul>
             <div class="swiper-pagination"></div>
-            <!--div class="swiper-scrollbar"></div-->
         </div>
+        <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eligendi earum quibusdam at molestiae
+                nihil magnam ex ipsam, quasi libero quaerat est hic unde deleniti cum aspernatur ut odio ducimus molestias
+                laudantium vel. Accusamus quam fugiat rem fuga laudantium modi a assumenda alias amet tempora dolorum cum
+                molestiae debitis consequuntur odio, aspernatur ex in. Numquam voluptatem tempore quis illum. Voluptatum,
+                veritatis? Praesentium magni tempore nam assumenda nihil, porro quam amet fuga cumque! Possimus nesciunt laudantium
+                magni sunt quo culpa eligendi nemo. Voluptate explicabo eligendi molestias repudiandae assumenda quaerat numquam. Recusandae
+                sunt quo temporibus fugit doloremque illo laudantium asperiores iusto commodi!
+            </p>
+            <p class="text text_bottom">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maxime voluptas mollitia, expedita quis
+                officiis nam rerum, ad pariatur ipsum illum sit earum. Iusto magni asperiores, perspiciatis eum ex soluta, recusandae
+                reiciendis harum tenetur atque dolorum veniam perferendis beatae eveniet distinctio itaque repellat illum quas aliquam
+                voluptates ad. Recusandae consequatur laudantium quam, et aperiam deserunt dicta dolorem laboriosam commodi inventore harum
+                ab rem, dolorum sint amet exercitationem modi atque ipsam illo, molestiae repudiandae! Possimus optio illum necessitatibus,
+                quae veritatis natus eius facere et perferendis aut cum, iure nihil inventore harum nemo dolore dolorem autem neque! Temporibus
+                voluptate numquam iure facilis mollitia voluptatem optio rem officia eaque odit assumenda culpa, odio sit veniam enim velit, quod
+                explicabo ipsa alias necessitatibus perferendis blanditiis? Sapiente optio inventore magni voluptas possimus ipsum voluptates
+                dolorem expedita. Unde aliquid blanditiis eaque saepe quaerat voluptate eligendi nostrum provident vel! Architecto, obcaecati
+                veniam, qui eum modi fugit voluptatem quia, excepturi magni voluptates a ipsa. Aliquid sint fugit, dicta similique velit, quasi
+                assumenda provident amet, explicabo nam quod quia. Tempore exercitationem necessitatibus accusamus culpa sed natus. Voluptatem
+                accusamus magni eaque labore reprehenderit qui dignissimos odio assumenda quia ex vero, deleniti recusandae quaerat nam ut dolorem,
+                molestias earum at numquam.
+            </p>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        //import swiper from 'node__modules/swiper/bundle';
-        // import Swiper styles
-        //import 'swiper/swiper-bundle.css';
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'horizontal',
             loop: true,
@@ -95,10 +133,6 @@
                 dynamicBullets: true,
                 dynaminMainBullets: 3,
             },
-/*
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },*/
         });
     </script>
 </body>
